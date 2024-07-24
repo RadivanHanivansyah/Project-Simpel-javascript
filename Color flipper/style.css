@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+.element{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+h2{
+  text-align: center;
+  margin-bottom: 50px;
+  background-color: black;
+  padding: 20px;
+  color: white;
+  letter-spacing: 3px;
+  border-radius:15px ;
+}
+button{
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%,-50%);
+  padding: 10px 20px;
+  background-color: transparent;
+  border-radius: 9px;
+  letter-spacing: 3px;
+  border: 1px solid black
+}
+button:hover{
+  cursor: pointer;
+}
