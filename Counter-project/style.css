@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.container>*{
+    margin: 1rem;
+    text-align: center;
+}
+.container h1{
+    font-size: 4rem;
+    color: rgb(44, 44, 190);
+}
+.container h2{
+    font-size: 6rem;
+    color: green;
+}
+.tombol{
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    min-width: 15em;
+}
+.tombol > *{
+    letter-spacing: 0.120rem;
+    text-transform: uppercase;
+    margin: 0px 10px;
+}
+.tombol button{
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+button:hover{
+    cursor: pointer;
+}
+button:active{
+    border-color: blue;
+}
