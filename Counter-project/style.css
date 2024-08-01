@@ -16,6 +16,7 @@
 .container h1{
     font-size: 4rem;
     color: rgb(44, 44, 190);
+    letter-spacing: 0.29rem;
 }
 .container h2{
     font-size: 6rem;
@@ -26,6 +27,8 @@
     /* border: 1px solid black; */
     justify-content: space-between;
     min-width: 15em;
+    /* position: relative;
+    right: 5%; */
 }
 .tombol > *{
     letter-spacing: 0.120rem;
