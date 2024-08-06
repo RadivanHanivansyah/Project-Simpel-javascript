@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(195, 192, 192);
+  overflow: hidden;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+.container > * {
+  margin: 5rem;
+  text-align: center;
+}
+.card {
+  max-width: 100rem;
+  border: 1px solid gray;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 2px 0px 5px 1px gray;
+  background-color: white;
+  box-sizing: border-box;
+}
+.card > * {
+  margin: 5px;
+}
+.gambar {
+  position: relative;
+  width: 50%;
+  margin: auto;
+}
+.card img {
+  max-width: 80%;
+  border-radius: 50%;
+  min-height: 10rem;
+}
+.card .circle {
+  width: 11.5rem;
+  height: 95%;
+  background-color: rgb(24, 143, 241, 1);
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-10%, -50%);
+  z-index: -1;
+}
+.petik {
+  background-color: rgb(64, 162, 242);
+  border-radius: 50%;
+  font-size: 1.9rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
+  position: absolute;
+  letter-spacing: 5px;
+  color: white;
+  line-height: 2.5rem;
+  top: 1rem;
+  left: 1rem;
+  z-index: 100;
+}
+.card span {
+  /* text-align: center; */
+  font-size: 2rem;
+  color: rgb(64, 162, 242);
+  display: inline-block;
+  margin-right: 0.7rem;
+  margin-left: 0.7rem;
+}
+.card span:hover {
+  cursor: pointer;
+}
+button {
+  display: block;
+  text-align: center;
+  transform: translateX(0.009rem);
+  border-color: rgb(64, 162, 242);
+  border-radius: 10px;
+  padding: 5px 10px;
+  background-color: rgb(64, 162, 242);
+  font-weight: 200;
+  color: rgb(229, 238, 241);
+}
+button:hover {
+  background-color: rgb(11, 83, 142);
+  color: black;
+  cursor: pointer;
+}
+h2 {
+  font-weight: 300;
+  letter-spacing: 3px;
+  transform: translateY(0.5rem);
+}
+h3 {
+  font-weight: normal;
+  color: gray;
+}
+.tombol {
+  margin: auto;
+  position: relative;
+  width: 5.8rem;
+  height: 2rem;
+  /* position: absolute; */
+  padding: 0px;
+}
+.tombol:hover {
+  border: 1px solid gray;
+  /* width: 10rem; */
+}
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(64, 162, 242);
+}
+h1 {
+  letter-spacing: 3px;
+}
