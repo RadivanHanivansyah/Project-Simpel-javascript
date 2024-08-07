@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="../public/style.css" />
+  </head>
+  <body class="bg-slate-50">
+    <div
+      class="navbar flex justify-between w-full bg-slate-300 h-20 items-center"
+    >
+      <div class="img-1 md:w-1/6 pl-1 w-3/4">
+        <img src="../src/image/logo.svg" alt="" />
+      </div>
+      <div
+        class="main-menu flex justify-around lg:w-1/4 text-lg font-medium md:w-1/2 invisible md:visible"
+      >
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Project</a>
+        <a href="#">Contact</a>
+      </div>
+      <div
+        class="logo flex w-1/6 justify-evenly invisible md:visible lg:w-[12%]"
+      >
+        <img
+          src="https://img.icons8.com/?size=100&id=Lcj8Zj8lL9zg&format=png&color=2D40EB"
+          alt=""
+          class="facebook h-9"
+        />
+        <img
+          src="https://img.icons8.com/?size=100&id=13963&format=png&color=000000"
+          alt=""
+          class="twitter h-9"
+        />
+        <img
+          src="https://img.icons8.com/?size=100&id=04ea2IMk0otP&format=png&color=2D40EB"
+          alt=""
+          class="linkedin h-9"
+        />
+      </div>
+      <div class="humbergur visible md:hidden px-5">
+        <img
+          class="w-3/4 hover:cursor-pointer duration-700 transition-transform delay-75"
+          src="../src/image/icons8-hamburger-menu-96.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <div
+      class="navbar-toogle opacity-0 transition-opacity ease-in-out duration-700 bg-slate-300 md:hidden pt-2 pl-2 pb-2 font-medium text-xl"
+    >
+      <a class="block mb-3" href="#">Home</a>
+      <a class="block mb-3" href="#">About</a>
+      <a class="block mb-3" href="#">Project</a>
+      <a class="block mb-3" href="#">Contact</a>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
