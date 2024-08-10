@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Raleway:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            animation: {
+              zoom: "zoom 1s ease-in-out infinite",
+            },
+            keyframes: {
+              zoom: {
+                "0%, 100%": { transform: "scale(.75)" },
+                "50%": { transform: "scale(1)" },
+              },
+            },
+          },
+          fontFamily: {
+            raleway: ["Raleway"],
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="overflow-hidden bg-blue-100">
+    <div class="flex justify-between md:pr-4">
+      <div
+        class="humbergur border-2 border-sky-600 h-fit animate-zoom order-last w-14 hidden md:block"
+      >
+        <img src="image/icons8-hamburger-menu-96.png" class="" alt="" />
+      </div>
+      <div
+        class="sidebar delay-150 duration-700 w-full md:w-fit pb-10 pt-2 gap-10 flex flex-col h-screen bg-slate-100 px-4"
+      >
+        <div
+          class="logo flex justify-between md:justify-normal items-center gap-20"
+        >
+          <img src="image/logo.svg" alt="" />
+          <span class="close text-2xl hover:cursor-pointer">❌</span>
+        </div>
+        <div
+          class="main-menu font-raleway pl-2 text-xl flex flex-col gap-8 flex-grow"
+        >
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Projects</a>
+          <a href="">Contact</a>
+        </div>
+        <div class="sosmed flex justify-center gap-4">
+          <img
+            src="https://img.icons8.com/?size=100&id=Lcj8Zj8lL9zg&format=png&color=2D40EB"
+            alt=""
+            class="facebook w-9"
+          />
+          <img
+            src="https://img.icons8.com/?size=100&id=13963&format=png&color=000000"
+            alt=""
+            class="twitter w-9"
+          />
+          <img
+            src="https://img.icons8.com/?size=100&id=04ea2IMk0otP&format=png&color=2D40EB"
+            alt=""
+            class="linkedin w-9"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
