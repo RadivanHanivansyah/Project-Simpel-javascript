@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div
+      class="bg-[url('/img/hero.jpeg')] w-screen h-screen bg-no-repeat bg-[length:100%_100%] bg-center"
+    >
+      <div
+        class="blend hidden w-screen h-screen bg-gradient-to-r from-blue-200 to-blue-400 mix-blend-multiply"
+      ></div>
+    </div>
+    <div class="bg-modal">
+    <div
+      class="modal shadow-xl shadow-slate-950 border-blue-400 max-[465px]:w-3/4 sm:w-1/2 sm:1/3 absolute top-1/2 left-1/2 -translate-x-1/2 w-1/2 lg:w-1/3 h-1/3 rounded-md -translate-y-1/2 bg-white"
+    >
+      <h2
+        class="capitalize font-semibold absolute w-full text-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-8 text-4xl sm:text-5xl max-[465px]:text-3xl"
+      >
+        Modal content
+      </h2>
+      <button
+        class="mt-14 max-md:tracking-normal max-sm:w-1/2 max-sm:px-4 open-modal text-white hover:bg-white hover:text-blue-900 hover:font-semibold bg-blue-500 rounded border px-6 py-[5px] uppercase text-sm tracking-[0.3em] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+      >
+        open modal
+      </button>
+      <span class="close hidden absolute top-4 text-xl right-2 hover:cursor-pointer">❌</span>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
