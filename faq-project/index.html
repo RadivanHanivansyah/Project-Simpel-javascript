@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gold: "#c59d5f",
+            },
+            fontFamily: {
+              great: ["Great Vibes", "cursive"],
+              Inter: ["Inter", "sans-serif"],
+            },
+            keyframes: {
+              rotate: {
+                "50%": { transform: "rotate(180deg)" },
+              },
+            },
+            animation: {
+              rotate: "rotate 1s ease-in-out 1",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-slate-200 overflow-x">
+    <div
+      class="absolute max-lg:w-screen max-lg:container max-lg:px-4 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-5"
+    >
+      <h2
+        class="judul capitalize text-center text-gold font-great text-6xl max-[330px]:text-5xl"
+      >
+        general questions
+      </h2>
+      <div
+        class="item flex flex-wrap justify-between p-4 gap-5 border-2 border-zinc-100 rounded-md bg-white max-[1039px]:items-center"
+      >
+        <h2
+          class="question font-Inter capitalize tracking-widest text-2xl font-light max-sm:text-ellipsis max-[1154px]:w-5/6 max-[358px]:w-3/4 max-[262px]:w-3/5"
+        >
+          do you accept all major credit cards?
+        </h2>
+        <span
+          class="plus-minus border-2 border-gold/100 text-xl pb-1 text-transparent [text-shadow:_0_1px_0_rgb(197_157_95)] h-fit w-fit hover:animate-rotate hover:cursor-pointer"
+          >➕</span
+        >
+        <div class="answer *:my-2 hidden">
+          <hr class="border-2 border-gray-200" />
+          <p class="text-slate-500 font-light">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati
+            ex quisquam ad rerum sit exercitationem possimus harum minus, optio
+            earum?
+          </p>
+        </div>
+      </div>
+      <div
+        class="item flex flex-wrap justify-between p-4 gap-5 border-2 border-zinc-100 rounded-md bg-white max-[1039px]:items-center"
+      >
+        <h2
+          class="question font-Inter capitalize tracking-widest text-2xl font-light max-sm:text-ellipsis max-[1154px]:w-5/6 max-[358px]:w-3/4 max-[262px]:w-3/5"
+        >
+          do you suppport local farmers?
+        </h2>
+        <span
+          class="plus-minus border-2 border-gold/100 text-xl pb-1 text-transparent [text-shadow:_0_1px_0_rgb(197_157_95)] h-fit w-fit hover:animate-rotate hover:cursor-pointer"
+          >➕</span
+        >
+        <div class="answer *:my-2 hidden">
+          <hr class="border-2 border-gray-200" />
+          <p class="text-slate-500 font-light">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati
+            ex quisquam ad rerum sit exercitationem possimus harum minus, optio
+            earum?
+          </p>
+        </div>
+      </div>
+      <div
+        class="item flex flex-wrap justify-between p-4 gap-5 border-2 border-zinc-100 rounded-md bg-white max-[1039px]:items-center"
+      >
+        <h2
+          class="question font-Inter capitalize tracking-widest text-2xl font-light max-sm:text-ellipsis max-[1154px]:w-5/6 max-[358px]:w-3/4 max-[262px]:w-3/5"
+        >
+          do you use organic ingredients?
+        </h2>
+        <span
+          class="plus-minus border-2 border-gold/100 text-xl pb-1 text-transparent [text-shadow:_0_1px_0_rgb(197_157_95)] h-fit w-fit hover:animate-rotate hover:cursor-pointer"
+          >➕</span
+        >
+        <div class="answer *:my-2 hidden">
+          <hr class="border-2 border-gray-200" />
+          <p class="text-slate-500 font-light">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati
+            ex quisquam ad rerum sit exercitationem possimus harum minus, optio
+            earum?
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
